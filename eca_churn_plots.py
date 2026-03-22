@@ -42,31 +42,43 @@ CONTINENT_COLORS = {
 }
 
 
-def save_churn_distribution(df: pd.DataFrame) -> Path:
-    # Figure 1: Plot the overall churn distribution from the processed dataset.
-    counts = df["churn_flag"].value_counts().reindex(["active", "churned"])
-    percentages = (counts / counts.sum() * 100).round(2)
+def save_churn_rate_by_subcategory(df: pd.DataFrame) -> Path:
+    # Figure 1: Compare average churn rate across product subcategories.
+    churn_rate = (
+        df.groupby("subcategory")["churn_flag"]
+        .apply(lambda values: (values == "churned").mean() * 100)
+        .sort_values(ascending=True)
+    )
 
-    fig, ax = plt.subplots(figsize=(8, 5))
-    bars = ax.bar(counts.index, counts.values, color=["#4C956C", "#D1495B"], edgecolor="black")
+    fig, ax = plt.subplots(figsize=(10, 7))
+    bars = ax.barh(
+        churn_rate.index,
+        churn_rate.values,
+        color="#2A6F97",
+        edgecolor="black",
+    )
 
-    ax.set_title("Figure 1. Customer Churn Distribution", fontsize=14, pad=12)
-    ax.set_xlabel("Churn Status")
-    ax.set_ylabel("Number of Customers")
-    ax.set_ylim(0, counts.max() * 1.15)
-
-    for bar, count, pct in zip(bars, counts.values, percentages.values):
+    for bar, rate in zip(bars, churn_rate.values):
+        label_x = max(min(rate - 0.2, 69.8), 55.8)
         ax.text(
-            bar.get_x() + bar.get_width() / 2,
-            bar.get_height() + 20,
-            f"{count}\n({pct}%)",
-            ha="center",
-            va="bottom",
-            fontsize=10,
+            label_x,
+            bar.get_y() + bar.get_height() / 2,
+            f"{rate:.1f}%",
+            ha="right",
+            va="center",
+            fontsize=9,
+            color="white",
+            clip_on=True,
         )
 
+    ax.set_title("Figure 1. Churn Rate by Subcategory", fontsize=14, pad=12)
+    ax.set_xlabel("Average Churn Rate (%)")
+    ax.set_ylabel("Subcategory")
+    ax.set_xlim(55, 70)
+    ax.grid(axis="x", linestyle="--", alpha=0.35)
+
     fig.tight_layout()
-    output_path = OUTPUT_DIR / "figure_1_churn_distribution.png"
+    output_path = OUTPUT_DIR / "figure_1_churn_rate_by_subcategory.png"
     fig.savefig(output_path, dpi=300, bbox_inches="tight")
     plt.close(fig)
     return output_path
@@ -160,18 +172,67 @@ def save_churn_rate_by_delivery_time(df: pd.DataFrame) -> Path:
     return output_path
 
 
+def save_churn_rate_heatmap_by_segment_channel(df: pd.DataFrame) -> Path:
+    # Figure 4: Heatmap of churn rate by customer segment and marketing channel.
+    plot_df = df.loc[df["customer_segment"] != "Missing"].copy()
+    heatmap_data = (
+        pd.crosstab(
+            plot_df["customer_segment"],
+            plot_df["marketing_channel"],
+            values=(plot_df["churn_flag"] == "churned").astype(int),
+            aggfunc="mean",
+        )
+        .mul(100)
+        .reindex(index=["New", "Regular", "VIP"], columns=["Ads", "Email", "Organic", "Referral"])
+    )
+
+    fig, ax = plt.subplots(figsize=(8, 6))
+    heatmap = ax.imshow(heatmap_data.values, cmap="YlOrRd", aspect="auto")
+
+    midpoint = heatmap_data.values.mean()
+    for row_index, segment in enumerate(heatmap_data.index):
+        for col_index, channel in enumerate(heatmap_data.columns):
+            value = heatmap_data.loc[segment, channel]
+            text_color = "white" if value >= midpoint else "black"
+            ax.text(
+                col_index,
+                row_index,
+                f"{value:.1f}%",
+                ha="center",
+                va="center",
+                color=text_color,
+                fontsize=10,
+            )
+
+    ax.set_title("Figure 4. Churn Rate by Customer Segment and Marketing Channel", fontsize=14, pad=12)
+    ax.set_xlabel("Marketing Channel")
+    ax.set_ylabel("Customer Segment")
+    ax.set_xticks(range(len(heatmap_data.columns)))
+    ax.set_xticklabels(heatmap_data.columns)
+    ax.set_yticks(range(len(heatmap_data.index)))
+    ax.set_yticklabels(heatmap_data.index)
+    plt.colorbar(heatmap, ax=ax, label="Churn Rate (%)")
+
+    fig.tight_layout()
+    output_path = OUTPUT_DIR / "figure_4_customer_segment_marketing_channel_heatmap.png"
+    fig.savefig(output_path, dpi=300, bbox_inches="tight")
+    plt.close(fig)
+    return output_path
+
+
 def main() -> None:
     (BASE_DIR / ".matplotlib").mkdir(exist_ok=True)
     OUTPUT_DIR.mkdir(exist_ok=True)
     df = pd.read_csv(INPUT_FILE)
 
     output_files = [
-        save_churn_distribution(df),
+        save_churn_rate_by_subcategory(df),
         save_average_churn_rate_by_age_group(df),
         save_churn_rate_by_delivery_time(df),
+        save_churn_rate_heatmap_by_segment_channel(df),
     ]
 
-    print("Generated three figures from the processed customer churn dataset:")
+    print("Generated four figures from the processed customer churn dataset:")
     for path in output_files:
         print(f"- {path.name}")
 
