@@ -18,6 +18,29 @@ BASE_DIR = SCRIPT_DIR
 INPUT_FILE = BASE_DIR / "ECA_churn_cleaned.csv"
 OUTPUT_DIR = BASE_DIR / "figures"
 
+CONTINENT_MAP = {
+    "Australia": "Oceania",
+    "Bahrain": "Asia",
+    "Canada": "North America",
+    "France": "Europe",
+    "Germany": "Europe",
+    "Ireland": "Europe",
+    "Italy": "Europe",
+    "Netherlands": "Europe",
+    "Sweden": "Europe",
+    "Switzerland": "Europe",
+    "United Arab Emirates": "Asia",
+    "United Kingdom": "Europe",
+}
+
+CONTINENT_COLORS = {
+    "Asia": "#D1495B",
+    "Europe": "#2A6F97",
+    "North America": "#4C956C",
+    "Oceania": "#E09F3E",
+    "Other": "#7A7A7A",
+}
+
 
 def save_churn_distribution(df: pd.DataFrame) -> Path:
     # Figure 1: Plot the overall churn distribution from the processed dataset.
@@ -95,47 +118,43 @@ def save_average_churn_rate_by_age_group(df: pd.DataFrame) -> Path:
     return output_path
 
 
-def save_churn_rate_heatmap(df: pd.DataFrame) -> Path:
-    # Figure 3: Plot churn rate by category and marketing channel as a heatmap.
-    heatmap_data = (
-        pd.crosstab(
-            df["category"],
-            df["marketing_channel"],
-            values=(df["churn_flag"] == "churned").astype(int),
-            aggfunc="mean",
-        )
-        .mul(100)
-        .round(1)
-        .fillna(0)
+def save_churn_rate_by_delivery_time(df: pd.DataFrame) -> Path:
+    # Figure 3: Explore how average churn rate changes across delivery time values.
+    churn_rate = (
+        df.groupby("delivery_time_days")["churn_flag"]
+        .apply(lambda values: (values == "churned").mean() * 100)
+        .sort_index()
     )
 
-    fig, ax = plt.subplots(figsize=(10, 6))
-    heatmap = ax.imshow(heatmap_data.values, cmap="YlOrRd", aspect="auto")
+    fig, ax = plt.subplots(figsize=(9, 6))
+    ax.plot(
+        churn_rate.index,
+        churn_rate.values,
+        color="#D1495B",
+        marker="o",
+        linewidth=2.5,
+        markersize=8,
+    )
 
-    ax.set_xticks(range(len(heatmap_data.columns)))
-    ax.set_xticklabels(heatmap_data.columns)
-    ax.set_yticks(range(len(heatmap_data.index)))
-    ax.set_yticklabels(heatmap_data.index)
+    for delivery_time, rate in churn_rate.items():
+        ax.text(
+            delivery_time,
+            rate + 0.6,
+            f"{rate:.1f}%",
+            ha="center",
+            va="bottom",
+            fontsize=10,
+        )
 
-    for row_index, category in enumerate(heatmap_data.index):
-        for col_index, channel in enumerate(heatmap_data.columns):
-            ax.text(
-                col_index,
-                row_index,
-                f"{heatmap_data.loc[category, channel]:.1f}%",
-                ha="center",
-                va="center",
-                color="black",
-                fontsize=9,
-            )
-
-    ax.set_title("Figure 3. Churn Rate by Category and Marketing Channel", fontsize=14, pad=12)
-    ax.set_xlabel("Marketing Channel")
-    ax.set_ylabel("Category")
-    plt.colorbar(heatmap, ax=ax, label="Churn Rate (%)")
+    ax.set_title("Figure 3. Churn Rate by Delivery Time", fontsize=14, pad=12)
+    ax.set_xlabel("Delivery Time (Days)")
+    ax.set_ylabel("Average Churn Rate (%)")
+    ax.set_xticks(churn_rate.index.tolist())
+    ax.set_ylim(55, 70)
+    ax.grid(axis="y", linestyle="--", alpha=0.35)
 
     fig.tight_layout()
-    output_path = OUTPUT_DIR / "figure_3_churn_rate_heatmap.png"
+    output_path = OUTPUT_DIR / "figure_3_churn_rate_by_delivery_time.png"
     fig.savefig(output_path, dpi=300, bbox_inches="tight")
     plt.close(fig)
     return output_path
@@ -149,7 +168,7 @@ def main() -> None:
     output_files = [
         save_churn_distribution(df),
         save_average_churn_rate_by_age_group(df),
-        save_churn_rate_heatmap(df),
+        save_churn_rate_by_delivery_time(df),
     ]
 
     print("Generated three figures from the processed customer churn dataset:")
