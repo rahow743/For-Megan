@@ -405,29 +405,29 @@ customer_id,stock_code,quantity,price,country,customer_age,gender,customer_segme
 404,Other,12,1.95,United Kingdom,77,Female,VIP,Referral,Clothing,Kids,no,Cash,9,churned
 405,21815,12,1.45,United Kingdom,54,Male,New,Ads,Toys,Kids,no,Cash,5,churned
 406,21479,4,3.75,United Kingdom,35,Male,Regular,Organic,Clothing,Women,no,PayPal,9,churned
-407,21481,6,2.95,United Kingdom,76,Male,Missing,Email,Toys,Kids,no,Cash,8,churned
-408,21484,4,3.45,United Kingdom,52,Male,Missing,Ads,Home Decor,Lights,no,PayPal,9,active
-409,22111,3,4.95,United Kingdom,64,Female,Missing,Email,Stationery,Books,no,Credit Card,3,churned
-410,22865,12,2.1,United Kingdom,58,Female,Missing,Referral,Stationery,Books,no,Credit Card,2,active
-411,Other,2,2.95,United Kingdom,40,Female,Missing,Organic,Stationery,Pens,no,Credit Card,8,churned
-412,22909,5,0.85,United Kingdom,27,Female,Missing,Ads,Stationery,Pens,no,Credit Card,7,active
-413,85099B,27,1.65,United Kingdom,76,Female,Missing,Organic,Kitchen,Utensils,no,PayPal,3,churned
-414,Other,27,0.64,United Kingdom,31,Male,Missing,Ads,Home Decor,Lights,no,Bank Transfer,6,churned
-415,22844,12,7.5,United Kingdom,47,Male,Missing,Email,Clothing,Men,no,Cash,8,churned
-416,Other,27,0.53,United Kingdom,41,Male,Missing,Organic,Stationery,Books,yes,PayPal,7,churned
-417,21989,27,0.64,United Kingdom,42,Female,Missing,Organic,Home Decor,Frames,no,PayPal,9,churned
-418,Other,12,2.1,United Kingdom,56,Male,Missing,Ads,Clothing,Kids,no,Bank Transfer,9,churned
-419,47599A,27,2.1,United Kingdom,19,Female,Missing,Email,Toys,Kids,yes,PayPal,4,churned
-420,Other,27,4.65,United Kingdom,34,Female,Missing,Organic,Kitchen,Appliances,no,PayPal,7,active
-421,21833,12,1.69,United Kingdom,76,Female,Missing,Email,Home Decor,Lights,no,Bank Transfer,5,churned
-422,22492,27,0.65,United Kingdom,78,Male,Missing,Ads,Kitchen,Utensils,no,Credit Card,6,churned
-423,Other,27,0.42,United Kingdom,79,Female,Missing,Email,Home Decor,Frames,no,PayPal,2,churned
-424,21333,1,2.95,United Kingdom,65,Female,Missing,Ads,Clothing,Men,no,Credit Card,2,active
-425,Other,1,1.65,United Kingdom,20,Female,Missing,Referral,Kitchen,Storage,no,PayPal,9,churned
-426,Other,2,1.25,United Kingdom,70,Female,Missing,Referral,Kitchen,Appliances,no,Cash,5,churned
-427,22502,1,4.95,United Kingdom,20,Male,Missing,Ads,Kitchen,Storage,no,Bank Transfer,8,churned
-428,85123A,1,2.95,United Kingdom,18,Male,Missing,Email,Electronics,Gadgets,yes,PayPal,3,active
-429,Other,1,1.65,United Kingdom,54,Male,Missing,Email,Electronics,Cables,no,Bank Transfer,7,churned
+407,21481,6,2.95,United Kingdom,76,Male,VIP,Email,Toys,Kids,no,Cash,8,churned
+408,21484,4,3.45,United Kingdom,52,Male,VIP,Ads,Home Decor,Lights,no,PayPal,9,active
+409,22111,3,4.95,United Kingdom,64,Female,VIP,Email,Stationery,Books,no,Credit Card,3,churned
+410,22865,12,2.1,United Kingdom,58,Female,VIP,Referral,Stationery,Books,no,Credit Card,2,active
+411,Other,2,2.95,United Kingdom,40,Female,VIP,Organic,Stationery,Pens,no,Credit Card,8,churned
+412,22909,5,0.85,United Kingdom,27,Female,VIP,Ads,Stationery,Pens,no,Credit Card,7,active
+413,85099B,27,1.65,United Kingdom,76,Female,VIP,Organic,Kitchen,Utensils,no,PayPal,3,churned
+414,Other,27,0.64,United Kingdom,31,Male,VIP,Ads,Home Decor,Lights,no,Bank Transfer,6,churned
+415,22844,12,7.5,United Kingdom,47,Male,VIP,Email,Clothing,Men,no,Cash,8,churned
+416,Other,27,0.53,United Kingdom,41,Male,VIP,Organic,Stationery,Books,yes,PayPal,7,churned
+417,21989,27,0.64,United Kingdom,42,Female,VIP,Organic,Home Decor,Frames,no,PayPal,9,churned
+418,Other,12,2.1,United Kingdom,56,Male,VIP,Ads,Clothing,Kids,no,Bank Transfer,9,churned
+419,47599A,27,2.1,United Kingdom,19,Female,VIP,Email,Toys,Kids,yes,PayPal,4,churned
+420,Other,27,4.65,United Kingdom,34,Female,VIP,Organic,Kitchen,Appliances,no,PayPal,7,active
+421,21833,12,1.69,United Kingdom,76,Female,VIP,Email,Home Decor,Lights,no,Bank Transfer,5,churned
+422,22492,27,0.65,United Kingdom,78,Male,VIP,Ads,Kitchen,Utensils,no,Credit Card,6,churned
+423,Other,27,0.42,United Kingdom,79,Female,VIP,Email,Home Decor,Frames,no,PayPal,2,churned
+424,21333,1,2.95,United Kingdom,65,Female,VIP,Ads,Clothing,Men,no,Credit Card,2,active
+425,Other,1,1.65,United Kingdom,20,Female,VIP,Referral,Kitchen,Storage,no,PayPal,9,churned
+426,Other,2,1.25,United Kingdom,70,Female,VIP,Referral,Kitchen,Appliances,no,Cash,5,churned
+427,22502,1,4.95,United Kingdom,20,Male,VIP,Ads,Kitchen,Storage,no,Bank Transfer,8,churned
+428,85123A,1,2.95,United Kingdom,18,Male,VIP,Email,Electronics,Gadgets,yes,PayPal,3,active
+429,Other,1,1.65,United Kingdom,54,Male,VIP,Email,Electronics,Cables,no,Bank Transfer,7,churned
 430,Other,2,5.95,Australia,37,Female,Missing,Ads,Electronics,Cables,no,Bank Transfer,2,churned
 431,Other,2,6.75,Australia,22,Female,Missing,Email,Kitchen,Storage,no,Bank Transfer,9,churned
 432,22892,12,1.25,Australia,26,Male,Missing,Email,Electronics,Cables,no,Bank Transfer,9,churned
@@ -441,29 +441,29 @@ customer_id,stock_code,quantity,price,country,customer_age,gender,customer_segme
 440,22383,10,1.65,Australia,79,Male,Missing,Email,Electronics,Accessories,no,Bank Transfer,9,active
 441,Other,12,2.55,Australia,65,Female,Missing,Organic,Stationery,Pens,no,PayPal,5,churned
 442,Other,5,2.95,Australia,77,Male,Missing,Organic,Home Decor,Lights,no,Cash,6,churned
-443,22745,6,2.1,United Kingdom,19,Female,Missing,Email,Clothing,Kids,no,Cash,9,active
-444,22423,4,7.5,United Kingdom,48,Male,Missing,Referral,Clothing,Kids,no,PayPal,1,churned
-445,22907,12,0.85,United Kingdom,20,Male,Missing,Email,Stationery,Art,yes,PayPal,5,active
-446,21974,12,1.45,United Kingdom,52,Male,Missing,Referral,Kitchen,Storage,no,PayPal,9,churned
-447,22271,6,2.95,United Kingdom,59,Male,Missing,Email,Toys,Kids,no,Cash,7,churned
-448,22749,4,3.75,United Kingdom,29,Male,Missing,Email,Stationery,Pens,yes,Cash,1,churned
-449,22892,12,1.25,United Kingdom,35,Male,Missing,Organic,Toys,Puzzles,no,Credit Card,7,active
-450,85227,12,0.85,United Kingdom,27,Female,Missing,Ads,Stationery,Books,no,PayPal,8,active
-451,85226A,12,0.55,United Kingdom,77,Female,Missing,Email,Kitchen,Appliances,no,Bank Transfer,2,churned
-452,21790,12,0.85,United Kingdom,25,Male,Missing,Email,Clothing,Kids,no,Cash,1,churned
-453,21791,12,1.25,United Kingdom,62,Male,Missing,Email,Toys,Kids,no,PayPal,4,churned
-454,22139,3,4.95,United Kingdom,25,Female,Missing,Organic,Clothing,Kids,no,PayPal,8,churned
-455,22531,24,0.42,United Kingdom,71,Male,Missing,Organic,Stationery,Pens,no,Credit Card,6,active
-456,21777,3,7.5,United Kingdom,37,Male,Missing,Referral,Clothing,Kids,no,Bank Transfer,1,churned
-457,21808,12,3.75,United Kingdom,52,Female,Missing,Organic,Toys,Kids,no,Bank Transfer,7,churned
-458,21804,12,3.75,United Kingdom,49,Female,Missing,Email,Stationery,Pens,no,Credit Card,5,active
-459,Other,3,5.95,United Kingdom,27,Female,Missing,Ads,Electronics,Gadgets,no,Credit Card,9,churned
-460,Other,1,7.5,United Kingdom,32,Female,Missing,Ads,Clothing,Women,no,Bank Transfer,2,churned
-461,22379,5,2.1,United Kingdom,31,Female,Missing,Ads,Kitchen,Appliances,no,PayPal,5,churned
-462,85099C,10,1.95,United Kingdom,67,Female,Missing,Organic,Toys,Outdoor,no,PayPal,5,active
-463,22112,24,4.25,United Kingdom,68,Female,Missing,Ads,Kitchen,Utensils,no,Cash,9,churned
-464,22114,27,3.45,United Kingdom,57,Female,Missing,Email,Kitchen,Storage,yes,Cash,5,churned
-465,Other,12,4.25,United Kingdom,25,Female,Missing,Organic,Toys,Puzzles,no,Cash,3,active
+443,22745,6,2.1,United Kingdom,19,Female,VIP,Email,Clothing,Kids,no,Cash,9,active
+444,22423,4,7.5,United Kingdom,48,Male,VIP,Referral,Clothing,Kids,no,PayPal,1,churned
+445,22907,12,0.85,United Kingdom,20,Male,VIP,Email,Stationery,Art,yes,PayPal,5,active
+446,21974,12,1.45,United Kingdom,52,Male,VIP,Referral,Kitchen,Storage,no,PayPal,9,churned
+447,22271,6,2.95,United Kingdom,59,Male,VIP,Email,Toys,Kids,no,Cash,7,churned
+448,22749,4,3.75,United Kingdom,29,Male,VIP,Email,Stationery,Pens,yes,Cash,1,churned
+449,22892,12,1.25,United Kingdom,35,Male,VIP,Organic,Toys,Puzzles,no,Credit Card,7,active
+450,85227,12,0.85,United Kingdom,27,Female,VIP,Ads,Stationery,Books,no,PayPal,8,active
+451,85226A,12,0.55,United Kingdom,77,Female,VIP,Email,Kitchen,Appliances,no,Bank Transfer,2,churned
+452,21790,12,0.85,United Kingdom,25,Male,VIP,Email,Clothing,Kids,no,Cash,1,churned
+453,21791,12,1.25,United Kingdom,62,Male,VIP,Email,Toys,Kids,no,PayPal,4,churned
+454,22139,3,4.95,United Kingdom,25,Female,VIP,Organic,Clothing,Kids,no,PayPal,8,churned
+455,22531,24,0.42,United Kingdom,71,Male,VIP,Organic,Stationery,Pens,no,Credit Card,6,active
+456,21777,3,7.5,United Kingdom,37,Male,VIP,Referral,Clothing,Kids,no,Bank Transfer,1,churned
+457,21808,12,3.75,United Kingdom,52,Female,VIP,Organic,Toys,Kids,no,Bank Transfer,7,churned
+458,21804,12,3.75,United Kingdom,49,Female,VIP,Email,Stationery,Pens,no,Credit Card,5,active
+459,Other,3,5.95,United Kingdom,27,Female,VIP,Ads,Electronics,Gadgets,no,Credit Card,9,churned
+460,Other,1,7.5,United Kingdom,32,Female,VIP,Ads,Clothing,Women,no,Bank Transfer,2,churned
+461,22379,5,2.1,United Kingdom,31,Female,VIP,Ads,Kitchen,Appliances,no,PayPal,5,churned
+462,85099C,10,1.95,United Kingdom,67,Female,VIP,Organic,Toys,Outdoor,no,PayPal,5,active
+463,22112,24,4.25,United Kingdom,68,Female,VIP,Ads,Kitchen,Utensils,no,Cash,9,churned
+464,22114,27,3.45,United Kingdom,57,Female,VIP,Email,Kitchen,Storage,yes,Cash,5,churned
+465,Other,12,4.25,United Kingdom,25,Female,VIP,Organic,Toys,Puzzles,no,Cash,3,active
 466,84879,16,1.69,France,49,Male,Missing,Email,Kitchen,Utensils,no,Credit Card,5,active
 467,22740,27,0.85,France,48,Female,Missing,Referral,Home Decor,Decor,no,Bank Transfer,2,churned
 468,Other,27,0.85,France,67,Female,Missing,Referral,Kitchen,Utensils,yes,Credit Card,3,active
@@ -532,21 +532,21 @@ customer_id,stock_code,quantity,price,country,customer_age,gender,customer_segme
 531,22555,1,1.65,France,37,Male,Missing,Ads,Toys,Puzzles,no,Bank Transfer,4,churned
 532,22328,1,2.95,France,76,Female,Missing,Email,Stationery,Pens,yes,Bank Transfer,4,active
 533,Other,1,1.45,France,37,Male,Missing,Email,Kitchen,Storage,no,PayPal,1,churned
-534,22158,16,2.95,United Kingdom,61,Female,Missing,Ads,Toys,Puzzles,yes,Cash,7,churned
-535,84978,12,1.25,United Kingdom,46,Female,Missing,Organic,Kitchen,Utensils,no,Bank Transfer,9,churned
-536,Other,12,1.45,United Kingdom,73,Male,Missing,Email,Electronics,Accessories,no,Credit Card,8,active
-537,22855,24,1.25,United Kingdom,33,Male,Missing,Referral,Home Decor,Frames,no,Credit Card,8,churned
-538,22457,6,2.95,United Kingdom,54,Male,Missing,Organic,Clothing,Men,no,Credit Card,1,churned
-539,22297,24,1.25,United Kingdom,48,Female,Missing,Referral,Kitchen,Appliances,no,Credit Card,6,churned
-540,84879,16,1.69,United Kingdom,79,Female,Missing,Email,Electronics,Accessories,no,PayPal,7,active
-541,Other,12,0.85,United Kingdom,34,Male,Missing,Email,Home Decor,Lights,no,Bank Transfer,1,churned
-542,22321,12,0.85,United Kingdom,34,Female,Missing,Referral,Toys,Kids,no,Bank Transfer,1,churned
-543,22186,6,2.95,United Kingdom,20,Female,Missing,Organic,Home Decor,Frames,no,Credit Card,9,active
-544,21911,12,1.65,United Kingdom,46,Female,Missing,Referral,Stationery,Art,no,Bank Transfer,9,churned
-545,Other,12,4.25,United Kingdom,67,Female,Missing,Referral,Home Decor,Decor,no,Credit Card,8,churned
-546,Other,1,1.25,United Kingdom,40,Female,Missing,Referral,Kitchen,Appliances,no,Credit Card,3,churned
-547,Other,1,0.85,United Kingdom,68,Female,Missing,Ads,Toys,Outdoor,no,Cash,5,active
-548,Other,1,0.5,United Kingdom,70,Male,Missing,Email,Electronics,Cables,no,Bank Transfer,8,active
+534,22158,16,2.95,United Kingdom,61,Female,VIP,Ads,Toys,Puzzles,yes,Cash,7,churned
+535,84978,12,1.25,United Kingdom,46,Female,VIP,Organic,Kitchen,Utensils,no,Bank Transfer,9,churned
+536,Other,12,1.45,United Kingdom,73,Male,VIP,Email,Electronics,Accessories,no,Credit Card,8,active
+537,22855,24,1.25,United Kingdom,33,Male,VIP,Referral,Home Decor,Frames,no,Credit Card,8,churned
+538,22457,6,2.95,United Kingdom,54,Male,VIP,Organic,Clothing,Men,no,Credit Card,1,churned
+539,22297,24,1.25,United Kingdom,48,Female,VIP,Referral,Kitchen,Appliances,no,Credit Card,6,churned
+540,84879,16,1.69,United Kingdom,79,Female,VIP,Email,Electronics,Accessories,no,PayPal,7,active
+541,Other,12,0.85,United Kingdom,34,Male,VIP,Email,Home Decor,Lights,no,Bank Transfer,1,churned
+542,22321,12,0.85,United Kingdom,34,Female,VIP,Referral,Toys,Kids,no,Bank Transfer,1,churned
+543,22186,6,2.95,United Kingdom,20,Female,VIP,Organic,Home Decor,Frames,no,Credit Card,9,active
+544,21911,12,1.65,United Kingdom,46,Female,VIP,Referral,Stationery,Art,no,Bank Transfer,9,churned
+545,Other,12,4.25,United Kingdom,67,Female,VIP,Referral,Home Decor,Decor,no,Credit Card,8,churned
+546,Other,1,1.25,United Kingdom,40,Female,VIP,Referral,Kitchen,Appliances,no,Credit Card,3,churned
+547,Other,1,0.85,United Kingdom,68,Female,VIP,Ads,Toys,Outdoor,no,Cash,5,active
+548,Other,1,0.5,United Kingdom,70,Male,VIP,Email,Electronics,Cables,no,Bank Transfer,8,active
 549,Other,12,0.42,United Kingdom,39,Female,New,Organic,Home Decor,Frames,no,Cash,9,active
 550,Other,12,0.42,United Kingdom,71,Male,New,Organic,Toys,Kids,no,PayPal,8,churned
 551,Other,1,1.25,United Kingdom,37,Male,New,Email,Stationery,Books,no,Credit Card,5,churned
@@ -809,44 +809,44 @@ customer_id,stock_code,quantity,price,country,customer_age,gender,customer_segme
 808,20726,3,1.65,United Kingdom,38,Female,VIP,Organic,Electronics,Accessories,no,Cash,2,churned
 809,72741,9,1.45,United Kingdom,43,Female,Regular,Ads,Electronics,Cables,no,Cash,3,churned
 810,20727,2,1.65,United Kingdom,53,Female,Regular,Ads,Home Decor,Decor,yes,Credit Card,1,churned
-811,22662,2,1.65,United Kingdom,22,Male,Missing,Ads,Stationery,Books,no,Credit Card,6,churned
-812,22384,2,1.65,United Kingdom,78,Male,Missing,Organic,Clothing,Men,no,Cash,9,active
-813,20728,2,1.65,United Kingdom,63,Male,Missing,Ads,Electronics,Accessories,no,Bank Transfer,6,active
-814,22382,2,1.65,United Kingdom,58,Female,Missing,Referral,Clothing,Men,no,Bank Transfer,4,churned
-815,20725,2,1.65,United Kingdom,21,Female,Missing,Organic,Toys,Kids,no,Cash,6,active
-816,85123A,10,2.95,United Kingdom,37,Male,Missing,Ads,Home Decor,Lights,no,PayPal,5,churned
-817,21212,2,0.55,United Kingdom,78,Male,Missing,Referral,Home Decor,Decor,no,Credit Card,7,active
-818,22417,1,0.55,United Kingdom,21,Female,Missing,Ads,Home Decor,Frames,no,PayPal,6,churned
-819,84991,1,0.55,United Kingdom,34,Female,Missing,Ads,Kitchen,Utensils,yes,Credit Card,3,churned
-820,21975,2,0.55,United Kingdom,18,Male,Missing,Email,Home Decor,Lights,no,Bank Transfer,9,active
-821,84992,2,0.55,United Kingdom,36,Male,Missing,Referral,Kitchen,Storage,no,Cash,9,churned
-822,21213,3,0.55,United Kingdom,53,Female,Missing,Organic,Electronics,Cables,no,Credit Card,7,churned
-823,21977,2,0.55,United Kingdom,57,Male,Missing,Ads,Clothing,Women,no,PayPal,9,active
-824,21976,3,0.55,United Kingdom,73,Female,Missing,Organic,Home Decor,Lights,no,Bank Transfer,5,churned
-825,22867,2,2.1,United Kingdom,42,Male,Missing,Email,Kitchen,Storage,no,Bank Transfer,1,active
-826,22633,3,2.1,United Kingdom,71,Female,Missing,Organic,Kitchen,Utensils,no,Cash,6,churned
-827,22834,2,2.1,United Kingdom,54,Female,Missing,Referral,Home Decor,Frames,no,PayPal,6,active
-828,22632,3,2.1,United Kingdom,75,Female,Missing,Email,Kitchen,Appliances,no,Credit Card,8,active
-829,22866,2,2.1,United Kingdom,67,Female,Missing,Referral,Electronics,Cables,no,Cash,7,active
-830,22865,2,2.1,United Kingdom,41,Female,Missing,Email,Home Decor,Lights,no,Credit Card,5,churned
-831,21742,2,5.95,United Kingdom,45,Female,Missing,Ads,Home Decor,Frames,no,PayPal,9,churned
-832,21239,1,0.85,United Kingdom,62,Female,Missing,Referral,Toys,Kids,no,PayPal,1,active
-833,22151,12,0.42,United Kingdom,20,Male,Missing,Email,Kitchen,Storage,no,Credit Card,7,churned
-834,Other,2,0.42,United Kingdom,75,Male,Missing,Organic,Home Decor,Frames,no,Cash,3,churned
-835,Other,6,0.85,United Kingdom,25,Female,Missing,Referral,Toys,Puzzles,yes,Cash,8,active
-836,21385,6,0.85,United Kingdom,69,Female,Missing,Email,Home Decor,Decor,no,PayPal,9,active
-837,Other,8,0.42,United Kingdom,60,Male,Missing,Referral,Kitchen,Storage,no,Bank Transfer,6,churned
-838,22180,3,7.5,United Kingdom,18,Female,Missing,Email,Home Decor,Decor,no,Credit Card,8,active
-839,22865,27,2.1,Germany,67,Female,Missing,Referral,Kitchen,Utensils,no,PayPal,7,churned
-840,22301,6,2.55,Germany,21,Female,Missing,Organic,Electronics,Accessories,no,Credit Card,4,churned
-841,22632,27,2.1,Germany,66,Male,Missing,Referral,Clothing,Kids,no,Credit Card,9,churned
-842,22326,27,2.55,Germany,54,Female,Missing,Organic,Home Decor,Frames,no,PayPal,7,churned
-843,Other,12,1.25,Germany,51,Female,Missing,Email,Toys,Puzzles,yes,Bank Transfer,6,churned
-844,21481,27,2.55,Germany,28,Male,Missing,Email,Home Decor,Decor,no,Bank Transfer,8,active
-845,21731,24,1.65,Germany,75,Female,Missing,Ads,Electronics,Accessories,yes,Bank Transfer,1,churned
-846,85226A,12,0.55,Germany,76,Female,Missing,Referral,Clothing,Women,no,PayPal,5,churned
-847,22630,24,1.95,Germany,25,Female,Missing,Ads,Kitchen,Utensils,no,Bank Transfer,4,churned
-848,POST,6,7.5,Germany,49,Male,Missing,Email,Stationery,Pens,no,Credit Card,2,churned
+811,22662,2,1.65,United Kingdom,22,Male,VIP,Ads,Stationery,Books,no,Credit Card,6,churned
+812,22384,2,1.65,United Kingdom,78,Male,VIP,Organic,Clothing,Men,no,Cash,9,active
+813,20728,2,1.65,United Kingdom,63,Male,VIP,Ads,Electronics,Accessories,no,Bank Transfer,6,active
+814,22382,2,1.65,United Kingdom,58,Female,VIP,Referral,Clothing,Men,no,Bank Transfer,4,churned
+815,20725,2,1.65,United Kingdom,21,Female,VIP,Organic,Toys,Kids,no,Cash,6,active
+816,85123A,10,2.95,United Kingdom,37,Male,VIP,Ads,Home Decor,Lights,no,PayPal,5,churned
+817,21212,2,0.55,United Kingdom,78,Male,VIP,Referral,Home Decor,Decor,no,Credit Card,7,active
+818,22417,1,0.55,United Kingdom,21,Female,VIP,Ads,Home Decor,Frames,no,PayPal,6,churned
+819,84991,1,0.55,United Kingdom,34,Female,VIP,Ads,Kitchen,Utensils,yes,Credit Card,3,churned
+820,21975,2,0.55,United Kingdom,18,Male,VIP,Email,Home Decor,Lights,no,Bank Transfer,9,active
+821,84992,2,0.55,United Kingdom,36,Male,VIP,Referral,Kitchen,Storage,no,Cash,9,churned
+822,21213,3,0.55,United Kingdom,53,Female,VIP,Organic,Electronics,Cables,no,Credit Card,7,churned
+823,21977,2,0.55,United Kingdom,57,Male,VIP,Ads,Clothing,Women,no,PayPal,9,active
+824,21976,3,0.55,United Kingdom,73,Female,VIP,Organic,Home Decor,Lights,no,Bank Transfer,5,churned
+825,22867,2,2.1,United Kingdom,42,Male,VIP,Email,Kitchen,Storage,no,Bank Transfer,1,active
+826,22633,3,2.1,United Kingdom,71,Female,VIP,Organic,Kitchen,Utensils,no,Cash,6,churned
+827,22834,2,2.1,United Kingdom,54,Female,VIP,Referral,Home Decor,Frames,no,PayPal,6,active
+828,22632,3,2.1,United Kingdom,75,Female,VIP,Email,Kitchen,Appliances,no,Credit Card,8,active
+829,22866,2,2.1,United Kingdom,67,Female,VIP,Referral,Electronics,Cables,no,Cash,7,active
+830,22865,2,2.1,United Kingdom,41,Female,VIP,Email,Home Decor,Lights,no,Credit Card,5,churned
+831,21742,2,5.95,United Kingdom,45,Female,VIP,Ads,Home Decor,Frames,no,PayPal,9,churned
+832,21239,1,0.85,United Kingdom,62,Female,VIP,Referral,Toys,Kids,no,PayPal,1,active
+833,22151,12,0.42,United Kingdom,20,Male,VIP,Email,Kitchen,Storage,no,Credit Card,7,churned
+834,Other,2,0.42,United Kingdom,75,Male,VIP,Organic,Home Decor,Frames,no,Cash,3,churned
+835,Other,6,0.85,United Kingdom,25,Female,VIP,Referral,Toys,Puzzles,yes,Cash,8,active
+836,21385,6,0.85,United Kingdom,69,Female,VIP,Email,Home Decor,Decor,no,PayPal,9,active
+837,Other,8,0.42,United Kingdom,60,Male,VIP,Referral,Kitchen,Storage,no,Bank Transfer,6,churned
+838,22180,3,7.5,United Kingdom,18,Female,VIP,Email,Home Decor,Decor,no,Credit Card,8,active
+839,22865,27,2.1,Germany,67,Female,VIP,Referral,Kitchen,Utensils,no,PayPal,7,churned
+840,22301,6,2.55,Germany,21,Female,VIP,Organic,Electronics,Accessories,no,Credit Card,4,churned
+841,22632,27,2.1,Germany,66,Male,VIP,Referral,Clothing,Kids,no,Credit Card,9,churned
+842,22326,27,2.55,Germany,54,Female,VIP,Organic,Home Decor,Frames,no,PayPal,7,churned
+843,Other,12,1.25,Germany,51,Female,VIP,Email,Toys,Puzzles,yes,Bank Transfer,6,churned
+844,21481,27,2.55,Germany,28,Male,VIP,Email,Home Decor,Decor,no,Bank Transfer,8,active
+845,21731,24,1.65,Germany,75,Female,VIP,Ads,Electronics,Accessories,yes,Bank Transfer,1,churned
+846,85226A,12,0.55,Germany,76,Female,VIP,Referral,Clothing,Women,no,PayPal,5,churned
+847,22630,24,1.95,Germany,25,Female,VIP,Ads,Kitchen,Utensils,no,Bank Transfer,4,churned
+848,POST,6,7.5,Germany,49,Male,VIP,Email,Stationery,Pens,no,Credit Card,2,churned
 849,20685,2,7.5,Switzerland,24,Male,Missing,Referral,Kitchen,Utensils,no,PayPal,7,churned
 850,21524,2,7.5,Switzerland,69,Female,Missing,Organic,Toys,Puzzles,no,Bank Transfer,2,active
 851,Other,6,2.55,Switzerland,38,Male,Missing,Organic,Kitchen,Utensils,no,Credit Card,3,churned
@@ -917,18 +917,18 @@ customer_id,stock_code,quantity,price,country,customer_age,gender,customer_segme
 916,22371,4,4.25,Switzerland,42,Female,Missing,Organic,Home Decor,Frames,no,Bank Transfer,7,active
 917,22372,4,4.25,Switzerland,20,Female,Missing,Organic,Stationery,Pens,no,PayPal,6,active
 918,POST,6,7.5,Switzerland,72,Female,Missing,Email,Stationery,Books,no,Cash,2,active
-919,POST,1,5.74,United Kingdom,54,Female,Missing,Email,Clothing,Women,no,Cash,1,churned
-920,21122,24,1.25,Ireland,58,Male,Missing,Ads,Kitchen,Utensils,no,Cash,3,churned
-921,Other,6,2.95,Ireland,20,Male,Missing,Referral,Toys,Kids,no,Cash,3,churned
-922,Other,10,1.25,Ireland,62,Female,Missing,Organic,Stationery,Books,no,PayPal,9,active
-923,Other,6,4.25,Ireland,20,Female,Missing,Referral,Toys,Outdoor,no,PayPal,7,churned
-924,Other,4,7.5,Ireland,31,Female,Missing,Email,Toys,Puzzles,no,Credit Card,4,churned
-925,Other,4,7.5,Ireland,43,Female,Missing,Organic,Kitchen,Appliances,no,Cash,8,churned
-926,22600,12,0.85,Ireland,61,Female,Missing,Organic,Stationery,Books,no,Bank Transfer,3,churned
-927,22603,12,0.85,Ireland,18,Female,Missing,Email,Electronics,Gadgets,no,Bank Transfer,6,active
-928,22577,12,0.85,Ireland,53,Male,Missing,Organic,Home Decor,Decor,no,PayPal,8,active
-929,22571,12,0.85,Ireland,52,Female,Missing,Email,Clothing,Men,no,Cash,9,churned
-930,22576,12,0.85,Ireland,72,Female,Missing,Referral,Clothing,Kids,no,Credit Card,5,active
+919,POST,1,5.74,United Kingdom,54,Female,VIP,Email,Clothing,Women,no,Cash,1,churned
+920,21122,24,1.25,Ireland,58,Male,VIP,Ads,Kitchen,Utensils,no,Cash,3,churned
+921,Other,6,2.95,Ireland,20,Male,VIP,Referral,Toys,Kids,no,Cash,3,churned
+922,Other,10,1.25,Ireland,62,Female,VIP,Organic,Stationery,Books,no,PayPal,9,active
+923,Other,6,4.25,Ireland,20,Female,VIP,Referral,Toys,Outdoor,no,PayPal,7,churned
+924,Other,4,7.5,Ireland,31,Female,VIP,Email,Toys,Puzzles,no,Credit Card,4,churned
+925,Other,4,7.5,Ireland,43,Female,VIP,Organic,Kitchen,Appliances,no,Cash,8,churned
+926,22600,12,0.85,Ireland,61,Female,VIP,Organic,Stationery,Books,no,Bank Transfer,3,churned
+927,22603,12,0.85,Ireland,18,Female,VIP,Email,Electronics,Gadgets,no,Bank Transfer,6,active
+928,22577,12,0.85,Ireland,53,Male,VIP,Organic,Home Decor,Decor,no,PayPal,8,active
+929,22571,12,0.85,Ireland,52,Female,VIP,Email,Clothing,Men,no,Cash,9,churned
+930,22576,12,0.85,Ireland,72,Female,VIP,Referral,Clothing,Kids,no,Credit Card,5,active
 931,Other,12,0.85,Ireland,43,Male,Regular,Email,Electronics,Gadgets,yes,PayPal,7,active
 932,Other,24,0.65,Ireland,45,Female,VIP,Email,Kitchen,Appliances,no,Credit Card,8,active
 933,Other,24,0.65,Ireland,71,Male,Regular,Ads,Home Decor,Frames,no,PayPal,4,churned
@@ -1102,87 +1102,87 @@ customer_id,stock_code,quantity,price,country,customer_age,gender,customer_segme
 1101,22941,6,7.5,United Kingdom,29,Male,New,Referral,Clothing,Men,yes,Bank Transfer,4,churned
 1102,22942,6,7.5,United Kingdom,45,Female,VIP,Email,Toys,Outdoor,no,Credit Card,4,churned
 1103,22959,25,0.42,United Kingdom,43,Female,Regular,Email,Kitchen,Appliances,no,Bank Transfer,2,active
-1104,22910,24,2.95,United Kingdom,67,Male,Missing,Ads,Electronics,Cables,no,Cash,7,active
-1105,Other,20,1.25,United Kingdom,68,Male,Missing,Referral,Stationery,Books,no,Bank Transfer,5,churned
-1106,Other,20,1.25,United Kingdom,58,Male,Missing,Organic,Stationery,Pens,no,PayPal,8,churned
-1107,22734,12,2.55,United Kingdom,59,Female,Missing,Ads,Toys,Kids,no,Bank Transfer,8,active
-1108,22812,24,1.95,United Kingdom,23,Male,Missing,Referral,Toys,Kids,yes,Cash,9,churned
-1109,22086,27,2.55,United Kingdom,20,Male,Missing,Email,Home Decor,Lights,no,Bank Transfer,8,churned
-1110,22729,4,3.75,United Kingdom,71,Male,Missing,Ads,Toys,Outdoor,no,Cash,2,churned
-1111,22726,4,3.75,United Kingdom,19,Male,Missing,Email,Home Decor,Frames,no,Credit Card,4,churned
-1112,22727,4,3.75,United Kingdom,66,Female,Missing,Referral,Toys,Outdoor,no,Credit Card,3,churned
-1113,Other,2,7.5,United Kingdom,66,Female,Missing,Email,Clothing,Kids,no,Bank Transfer,1,active
-1114,Other,2,7.5,United Kingdom,24,Male,Missing,Ads,Home Decor,Decor,no,Cash,4,active
-1115,21584,20,1.65,United Kingdom,35,Female,Missing,Referral,Stationery,Books,no,Credit Card,2,churned
-1116,21217,4,7.5,United Kingdom,63,Female,Missing,Organic,Home Decor,Lights,no,Credit Card,1,churned
-1117,20914,12,2.95,United Kingdom,67,Female,Missing,Email,Clothing,Kids,no,Cash,5,churned
-1118,21232,27,1.06,United Kingdom,77,Male,Missing,Organic,Home Decor,Frames,no,Cash,5,churned
-1119,21231,27,1.06,United Kingdom,51,Male,Missing,Referral,Toys,Outdoor,no,PayPal,6,churned
-1120,22740,27,0.85,United Kingdom,62,Female,Missing,Ads,Home Decor,Decor,no,PayPal,6,active
-1121,22752,24,7.5,United Kingdom,51,Male,Missing,Referral,Clothing,Men,no,PayPal,5,active
-1122,Other,27,0.85,United Kingdom,29,Male,Missing,Organic,Home Decor,Frames,no,Credit Card,6,churned
-1123,Other,20,1.25,United Kingdom,23,Female,Missing,Referral,Clothing,Women,no,Credit Card,2,churned
-1124,Other,20,1.25,United Kingdom,20,Male,Missing,Organic,Kitchen,Utensils,no,Cash,9,active
-1125,Other,20,1.25,United Kingdom,42,Female,Missing,Organic,Toys,Puzzles,no,PayPal,9,churned
-1126,Other,20,1.25,United Kingdom,20,Female,Missing,Organic,Toys,Kids,no,Bank Transfer,7,active
-1127,Other,20,1.25,United Kingdom,73,Female,Missing,Referral,Kitchen,Appliances,no,Cash,9,churned
-1128,Other,20,1.25,United Kingdom,58,Female,Missing,Referral,Kitchen,Appliances,no,Cash,7,churned
-1129,Other,20,1.25,United Kingdom,73,Female,Missing,Referral,Stationery,Art,no,PayPal,3,churned
-1130,Other,20,1.25,United Kingdom,59,Male,Missing,Email,Stationery,Books,no,Credit Card,5,churned
-1131,Other,20,1.25,United Kingdom,37,Male,Missing,Organic,Clothing,Women,no,Bank Transfer,8,churned
-1132,Other,20,1.25,United Kingdom,43,Female,Missing,Organic,Kitchen,Utensils,no,Credit Card,7,churned
-1133,22676,20,1.25,United Kingdom,55,Female,Missing,Organic,Clothing,Women,no,PayPal,1,active
-1134,22690,10,6.75,United Kingdom,55,Female,Missing,Email,Clothing,Men,yes,Bank Transfer,7,churned
-1135,15036,27,0.75,United Kingdom,58,Female,Missing,Referral,Toys,Outdoor,no,Cash,9,churned
-1136,Other,12,0.42,United Kingdom,55,Female,Missing,Email,Clothing,Women,no,PayPal,9,active
-1137,Other,12,1.65,United Kingdom,30,Male,Missing,Organic,Home Decor,Frames,no,Cash,2,active
-1138,Other,12,0.42,United Kingdom,37,Female,Missing,Referral,Electronics,Gadgets,no,Cash,1,churned
-1139,Other,25,0.42,United Kingdom,45,Female,Missing,Ads,Clothing,Kids,no,Cash,1,churned
-1140,Other,25,0.42,United Kingdom,42,Male,Missing,Ads,Toys,Kids,no,PayPal,5,churned
-1141,Other,25,0.42,United Kingdom,34,Female,Missing,Email,Toys,Outdoor,no,Credit Card,2,churned
-1142,22892,12,1.25,United Kingdom,67,Male,Missing,Organic,Electronics,Cables,no,Bank Transfer,1,active
-1143,22704,25,0.42,United Kingdom,18,Male,Missing,Organic,Home Decor,Decor,no,Cash,6,churned
-1144,Other,12,0.85,United Kingdom,27,Female,Missing,Organic,Toys,Kids,no,Cash,6,churned
-1145,Other,24,0.85,United Kingdom,77,Female,Missing,Ads,Toys,Outdoor,no,Bank Transfer,2,active
-1146,20972,12,1.25,United Kingdom,72,Female,Missing,Ads,Toys,Puzzles,no,Cash,6,churned
-1147,22149,12,2.1,United Kingdom,26,Female,Missing,Referral,Clothing,Kids,no,Bank Transfer,1,churned
-1148,Other,12,3.75,United Kingdom,39,Male,Missing,Organic,Clothing,Women,no,Credit Card,6,active
-1149,22750,24,3.75,United Kingdom,67,Male,Missing,Referral,Kitchen,Appliances,no,Cash,9,churned
-1150,22749,24,3.75,United Kingdom,76,Male,Missing,Email,Clothing,Kids,yes,PayPal,1,churned
-1151,20727,10,1.65,United Kingdom,57,Male,Missing,Organic,Kitchen,Appliances,no,Bank Transfer,1,churned
-1152,22492,27,0.65,United Kingdom,76,Male,Missing,Email,Stationery,Art,no,Cash,9,active
-1153,21703,24,0.42,United Kingdom,70,Female,Missing,Organic,Clothing,Kids,no,Cash,1,churned
-1154,21914,12,1.25,United Kingdom,53,Male,Missing,Organic,Kitchen,Appliances,no,Bank Transfer,1,churned
-1155,22561,24,1.65,United Kingdom,69,Male,Missing,Email,Electronics,Cables,no,Bank Transfer,5,churned
-1156,22553,24,1.65,United Kingdom,45,Female,Missing,Ads,Clothing,Men,no,Cash,2,active
-1157,Other,24,0.29,United Kingdom,71,Male,Missing,Email,Stationery,Pens,yes,Bank Transfer,1,active
-1158,84077,27,0.29,United Kingdom,50,Female,Missing,Email,Kitchen,Storage,no,PayPal,3,churned
-1159,84670,27,0.42,United Kingdom,38,Male,Missing,Referral,Kitchen,Storage,no,Bank Transfer,8,active
-1160,Other,12,2.1,United Kingdom,35,Male,Missing,Referral,Toys,Puzzles,no,Bank Transfer,8,active
-1161,21731,24,1.65,United Kingdom,67,Female,Missing,Email,Clothing,Kids,no,Credit Card,6,churned
-1162,22551,24,1.65,United Kingdom,57,Male,Missing,Ads,Stationery,Pens,no,Cash,7,active
-1163,22418,27,0.85,United Kingdom,74,Female,Missing,Ads,Kitchen,Storage,no,Bank Transfer,3,active
-1164,22045,25,0.42,United Kingdom,39,Male,Missing,Referral,Clothing,Women,no,Credit Card,3,churned
-1165,22029,12,0.42,United Kingdom,26,Male,Missing,Referral,Stationery,Pens,no,Cash,5,churned
-1166,22367,8,1.95,United Kingdom,58,Female,Missing,Referral,Electronics,Cables,no,Bank Transfer,2,churned
-1167,22383,10,1.65,United Kingdom,71,Female,Missing,Referral,Electronics,Gadgets,no,Cash,5,churned
-1168,22385,10,1.95,United Kingdom,43,Male,Missing,Organic,Toys,Kids,no,Credit Card,2,churned
-1169,Other,24,1.95,United Kingdom,66,Male,Missing,Ads,Clothing,Women,yes,PayPal,3,active
-1170,48129,2,7.5,United Kingdom,22,Male,Missing,Organic,Kitchen,Storage,no,Cash,1,active
-1171,48187,2,7.5,United Kingdom,37,Female,Missing,Organic,Home Decor,Frames,no,Credit Card,8,churned
-1172,Other,27,0.42,United Kingdom,78,Male,Missing,Ads,Stationery,Art,no,Credit Card,3,active
-1173,22578,27,0.85,United Kingdom,45,Female,Missing,Ads,Kitchen,Utensils,no,Bank Transfer,2,churned
-1174,22577,24,0.85,United Kingdom,49,Male,Missing,Organic,Home Decor,Lights,no,Bank Transfer,9,active
-1175,35971,27,0.42,United Kingdom,41,Female,Missing,Email,Electronics,Cables,no,Bank Transfer,9,churned
-1176,Other,4,7.5,United Kingdom,36,Female,Missing,Referral,Toys,Outdoor,no,Cash,5,churned
-1177,82494L,6,2.95,United Kingdom,39,Male,Missing,Email,Kitchen,Utensils,no,Credit Card,9,churned
-1178,84341B,27,0.38,United Kingdom,51,Female,Missing,Ads,Stationery,Art,no,PayPal,2,active
-1179,21212,24,0.55,United Kingdom,75,Female,Missing,Referral,Toys,Kids,no,PayPal,4,churned
-1180,21213,24,0.55,United Kingdom,34,Female,Missing,Ads,Stationery,Pens,no,PayPal,6,churned
-1181,22952,24,0.55,United Kingdom,50,Male,Missing,Organic,Clothing,Kids,no,Cash,6,churned
-1182,47591D,8,1.95,United Kingdom,37,Male,Missing,Organic,Electronics,Gadgets,yes,Credit Card,9,churned
-1183,84991,24,0.55,United Kingdom,20,Female,Missing,Email,Kitchen,Utensils,no,Bank Transfer,1,churned
-1184,Other,2,7.5,United Kingdom,39,Female,Missing,Organic,Electronics,Cables,no,Cash,4,active
+1104,22910,24,2.95,United Kingdom,67,Male,VIP,Ads,Electronics,Cables,no,Cash,7,active
+1105,Other,20,1.25,United Kingdom,68,Male,VIP,Referral,Stationery,Books,no,Bank Transfer,5,churned
+1106,Other,20,1.25,United Kingdom,58,Male,VIP,Organic,Stationery,Pens,no,PayPal,8,churned
+1107,22734,12,2.55,United Kingdom,59,Female,VIP,Ads,Toys,Kids,no,Bank Transfer,8,active
+1108,22812,24,1.95,United Kingdom,23,Male,VIP,Referral,Toys,Kids,yes,Cash,9,churned
+1109,22086,27,2.55,United Kingdom,20,Male,VIP,Email,Home Decor,Lights,no,Bank Transfer,8,churned
+1110,22729,4,3.75,United Kingdom,71,Male,VIP,Ads,Toys,Outdoor,no,Cash,2,churned
+1111,22726,4,3.75,United Kingdom,19,Male,VIP,Email,Home Decor,Frames,no,Credit Card,4,churned
+1112,22727,4,3.75,United Kingdom,66,Female,VIP,Referral,Toys,Outdoor,no,Credit Card,3,churned
+1113,Other,2,7.5,United Kingdom,66,Female,VIP,Email,Clothing,Kids,no,Bank Transfer,1,active
+1114,Other,2,7.5,United Kingdom,24,Male,VIP,Ads,Home Decor,Decor,no,Cash,4,active
+1115,21584,20,1.65,United Kingdom,35,Female,VIP,Referral,Stationery,Books,no,Credit Card,2,churned
+1116,21217,4,7.5,United Kingdom,63,Female,VIP,Organic,Home Decor,Lights,no,Credit Card,1,churned
+1117,20914,12,2.95,United Kingdom,67,Female,VIP,Email,Clothing,Kids,no,Cash,5,churned
+1118,21232,27,1.06,United Kingdom,77,Male,VIP,Organic,Home Decor,Frames,no,Cash,5,churned
+1119,21231,27,1.06,United Kingdom,51,Male,VIP,Referral,Toys,Outdoor,no,PayPal,6,churned
+1120,22740,27,0.85,United Kingdom,62,Female,VIP,Ads,Home Decor,Decor,no,PayPal,6,active
+1121,22752,24,7.5,United Kingdom,51,Male,VIP,Referral,Clothing,Men,no,PayPal,5,active
+1122,Other,27,0.85,United Kingdom,29,Male,VIP,Organic,Home Decor,Frames,no,Credit Card,6,churned
+1123,Other,20,1.25,United Kingdom,23,Female,VIP,Referral,Clothing,Women,no,Credit Card,2,churned
+1124,Other,20,1.25,United Kingdom,20,Male,VIP,Organic,Kitchen,Utensils,no,Cash,9,active
+1125,Other,20,1.25,United Kingdom,42,Female,VIP,Organic,Toys,Puzzles,no,PayPal,9,churned
+1126,Other,20,1.25,United Kingdom,20,Female,VIP,Organic,Toys,Kids,no,Bank Transfer,7,active
+1127,Other,20,1.25,United Kingdom,73,Female,VIP,Referral,Kitchen,Appliances,no,Cash,9,churned
+1128,Other,20,1.25,United Kingdom,58,Female,VIP,Referral,Kitchen,Appliances,no,Cash,7,churned
+1129,Other,20,1.25,United Kingdom,73,Female,VIP,Referral,Stationery,Art,no,PayPal,3,churned
+1130,Other,20,1.25,United Kingdom,59,Male,VIP,Email,Stationery,Books,no,Credit Card,5,churned
+1131,Other,20,1.25,United Kingdom,37,Male,VIP,Organic,Clothing,Women,no,Bank Transfer,8,churned
+1132,Other,20,1.25,United Kingdom,43,Female,VIP,Organic,Kitchen,Utensils,no,Credit Card,7,churned
+1133,22676,20,1.25,United Kingdom,55,Female,VIP,Organic,Clothing,Women,no,PayPal,1,active
+1134,22690,10,6.75,United Kingdom,55,Female,VIP,Email,Clothing,Men,yes,Bank Transfer,7,churned
+1135,15036,27,0.75,United Kingdom,58,Female,VIP,Referral,Toys,Outdoor,no,Cash,9,churned
+1136,Other,12,0.42,United Kingdom,55,Female,VIP,Email,Clothing,Women,no,PayPal,9,active
+1137,Other,12,1.65,United Kingdom,30,Male,VIP,Organic,Home Decor,Frames,no,Cash,2,active
+1138,Other,12,0.42,United Kingdom,37,Female,VIP,Referral,Electronics,Gadgets,no,Cash,1,churned
+1139,Other,25,0.42,United Kingdom,45,Female,VIP,Ads,Clothing,Kids,no,Cash,1,churned
+1140,Other,25,0.42,United Kingdom,42,Male,VIP,Ads,Toys,Kids,no,PayPal,5,churned
+1141,Other,25,0.42,United Kingdom,34,Female,VIP,Email,Toys,Outdoor,no,Credit Card,2,churned
+1142,22892,12,1.25,United Kingdom,67,Male,VIP,Organic,Electronics,Cables,no,Bank Transfer,1,active
+1143,22704,25,0.42,United Kingdom,18,Male,VIP,Organic,Home Decor,Decor,no,Cash,6,churned
+1144,Other,12,0.85,United Kingdom,27,Female,VIP,Organic,Toys,Kids,no,Cash,6,churned
+1145,Other,24,0.85,United Kingdom,77,Female,VIP,Ads,Toys,Outdoor,no,Bank Transfer,2,active
+1146,20972,12,1.25,United Kingdom,72,Female,VIP,Ads,Toys,Puzzles,no,Cash,6,churned
+1147,22149,12,2.1,United Kingdom,26,Female,VIP,Referral,Clothing,Kids,no,Bank Transfer,1,churned
+1148,Other,12,3.75,United Kingdom,39,Male,VIP,Organic,Clothing,Women,no,Credit Card,6,active
+1149,22750,24,3.75,United Kingdom,67,Male,VIP,Referral,Kitchen,Appliances,no,Cash,9,churned
+1150,22749,24,3.75,United Kingdom,76,Male,VIP,Email,Clothing,Kids,yes,PayPal,1,churned
+1151,20727,10,1.65,United Kingdom,57,Male,VIP,Organic,Kitchen,Appliances,no,Bank Transfer,1,churned
+1152,22492,27,0.65,United Kingdom,76,Male,VIP,Email,Stationery,Art,no,Cash,9,active
+1153,21703,24,0.42,United Kingdom,70,Female,VIP,Organic,Clothing,Kids,no,Cash,1,churned
+1154,21914,12,1.25,United Kingdom,53,Male,VIP,Organic,Kitchen,Appliances,no,Bank Transfer,1,churned
+1155,22561,24,1.65,United Kingdom,69,Male,VIP,Email,Electronics,Cables,no,Bank Transfer,5,churned
+1156,22553,24,1.65,United Kingdom,45,Female,VIP,Ads,Clothing,Men,no,Cash,2,active
+1157,Other,24,0.29,United Kingdom,71,Male,VIP,Email,Stationery,Pens,yes,Bank Transfer,1,active
+1158,84077,27,0.29,United Kingdom,50,Female,VIP,Email,Kitchen,Storage,no,PayPal,3,churned
+1159,84670,27,0.42,United Kingdom,38,Male,VIP,Referral,Kitchen,Storage,no,Bank Transfer,8,active
+1160,Other,12,2.1,United Kingdom,35,Male,VIP,Referral,Toys,Puzzles,no,Bank Transfer,8,active
+1161,21731,24,1.65,United Kingdom,67,Female,VIP,Email,Clothing,Kids,no,Credit Card,6,churned
+1162,22551,24,1.65,United Kingdom,57,Male,VIP,Ads,Stationery,Pens,no,Cash,7,active
+1163,22418,27,0.85,United Kingdom,74,Female,VIP,Ads,Kitchen,Storage,no,Bank Transfer,3,active
+1164,22045,25,0.42,United Kingdom,39,Male,VIP,Referral,Clothing,Women,no,Credit Card,3,churned
+1165,22029,12,0.42,United Kingdom,26,Male,VIP,Referral,Stationery,Pens,no,Cash,5,churned
+1166,22367,8,1.95,United Kingdom,58,Female,VIP,Referral,Electronics,Cables,no,Bank Transfer,2,churned
+1167,22383,10,1.65,United Kingdom,71,Female,VIP,Referral,Electronics,Gadgets,no,Cash,5,churned
+1168,22385,10,1.95,United Kingdom,43,Male,VIP,Organic,Toys,Kids,no,Credit Card,2,churned
+1169,Other,24,1.95,United Kingdom,66,Male,VIP,Ads,Clothing,Women,yes,PayPal,3,active
+1170,48129,2,7.5,United Kingdom,22,Male,VIP,Organic,Kitchen,Storage,no,Cash,1,active
+1171,48187,2,7.5,United Kingdom,37,Female,VIP,Organic,Home Decor,Frames,no,Credit Card,8,churned
+1172,Other,27,0.42,United Kingdom,78,Male,VIP,Ads,Stationery,Art,no,Credit Card,3,active
+1173,22578,27,0.85,United Kingdom,45,Female,VIP,Ads,Kitchen,Utensils,no,Bank Transfer,2,churned
+1174,22577,24,0.85,United Kingdom,49,Male,VIP,Organic,Home Decor,Lights,no,Bank Transfer,9,active
+1175,35971,27,0.42,United Kingdom,41,Female,VIP,Email,Electronics,Cables,no,Bank Transfer,9,churned
+1176,Other,4,7.5,United Kingdom,36,Female,VIP,Referral,Toys,Outdoor,no,Cash,5,churned
+1177,82494L,6,2.95,United Kingdom,39,Male,VIP,Email,Kitchen,Utensils,no,Credit Card,9,churned
+1178,84341B,27,0.38,United Kingdom,51,Female,VIP,Ads,Stationery,Art,no,PayPal,2,active
+1179,21212,24,0.55,United Kingdom,75,Female,VIP,Referral,Toys,Kids,no,PayPal,4,churned
+1180,21213,24,0.55,United Kingdom,34,Female,VIP,Ads,Stationery,Pens,no,PayPal,6,churned
+1181,22952,24,0.55,United Kingdom,50,Male,VIP,Organic,Clothing,Kids,no,Cash,6,churned
+1182,47591D,8,1.95,United Kingdom,37,Male,VIP,Organic,Electronics,Gadgets,yes,Credit Card,9,churned
+1183,84991,24,0.55,United Kingdom,20,Female,VIP,Email,Kitchen,Utensils,no,Bank Transfer,1,churned
+1184,Other,2,7.5,United Kingdom,39,Female,VIP,Organic,Electronics,Cables,no,Cash,4,active
 1185,22065,12,1.45,United Kingdom,31,Female,Regular,Ads,Toys,Kids,no,Credit Card,9,churned
 1186,22909,12,0.85,United Kingdom,70,Male,New,Ads,Clothing,Women,no,Credit Card,7,active
 1187,35832,12,2.95,United Kingdom,56,Female,New,Email,Clothing,Men,no,Cash,1,active
@@ -1740,74 +1740,74 @@ customer_id,stock_code,quantity,price,country,customer_age,gender,customer_segme
 1739,21191,27,1.69,United Kingdom,18,Female,Regular,Referral,Electronics,Cables,no,Credit Card,4,active
 1740,Other,27,1.45,United Kingdom,27,Male,New,Referral,Clothing,Kids,no,PayPal,2,churned
 1741,21186,27,1.45,United Kingdom,34,Female,Regular,Ads,Home Decor,Decor,no,Credit Card,2,churned
-1742,48184,5,7.5,United Kingdom,74,Male,Missing,Email,Stationery,Art,no,Credit Card,2,churned
-1743,21658,6,3.95,United Kingdom,55,Male,Missing,Ads,Stationery,Books,no,PayPal,7,active
-1744,48187,10,6.75,United Kingdom,29,Male,Missing,Organic,Clothing,Men,yes,Cash,8,churned
-1745,84029G,24,3.39,United Kingdom,39,Female,Missing,Organic,Home Decor,Lights,no,Credit Card,5,churned
-1746,22110,27,2.1,United Kingdom,45,Female,Missing,Organic,Electronics,Accessories,no,Cash,1,churned
-1747,22111,24,4.25,United Kingdom,66,Male,Missing,Referral,Electronics,Cables,no,Credit Card,5,active
-1748,71477,24,2.75,United Kingdom,47,Female,Missing,Organic,Stationery,Books,no,PayPal,6,churned
-1749,22633,27,1.85,United Kingdom,42,Male,Missing,Referral,Toys,Outdoor,no,Credit Card,3,active
-1750,22865,27,1.85,United Kingdom,60,Female,Missing,Referral,Kitchen,Appliances,no,Bank Transfer,5,churned
-1751,22867,27,1.85,United Kingdom,28,Female,Missing,Ads,Electronics,Cables,no,Cash,7,churned
-1752,84836,27,1.06,United Kingdom,65,Male,Missing,Email,Stationery,Pens,no,Credit Card,5,churned
-1753,Other,24,3.39,United Kingdom,79,Female,Missing,Ads,Stationery,Books,no,PayPal,7,churned
-1754,21137,27,3.39,United Kingdom,32,Female,Missing,Email,Kitchen,Appliances,no,Bank Transfer,8,churned
-1755,Other,24,0.42,United Kingdom,69,Male,Missing,Referral,Kitchen,Utensils,no,Bank Transfer,5,churned
-1756,Other,24,0.65,United Kingdom,68,Female,Missing,Organic,Electronics,Accessories,no,Cash,4,churned
-1757,Other,24,0.85,United Kingdom,27,Male,Missing,Email,Stationery,Books,no,Credit Card,8,churned
-1758,Other,24,1.25,United Kingdom,68,Female,Missing,Email,Clothing,Women,no,Credit Card,7,churned
-1759,21846,24,1.25,United Kingdom,19,Male,Missing,Referral,Kitchen,Storage,no,Cash,8,active
-1760,21849,24,1.25,United Kingdom,31,Female,Missing,Organic,Home Decor,Frames,no,Bank Transfer,8,churned
-1761,Other,24,1.25,United Kingdom,45,Female,Missing,Ads,Electronics,Gadgets,no,Credit Card,5,churned
-1762,Other,24,1.25,United Kingdom,51,Female,Missing,Referral,Stationery,Art,no,Cash,8,churned
-1763,Other,24,1.25,United Kingdom,37,Male,Missing,Ads,Toys,Kids,no,Bank Transfer,4,churned
-1764,Other,24,1.25,United Kingdom,66,Male,Missing,Email,Toys,Kids,no,PayPal,6,active
-1765,21993,24,1.25,United Kingdom,24,Female,Missing,Ads,Electronics,Gadgets,no,PayPal,9,active
-1766,21991,24,1.25,United Kingdom,67,Male,Missing,Ads,Clothing,Kids,no,Credit Card,4,churned
-1767,85132A,12,1.95,United Kingdom,55,Female,Missing,Email,Toys,Outdoor,no,Bank Transfer,3,churned
-1768,85132B,12,1.95,United Kingdom,20,Female,Missing,Referral,Kitchen,Utensils,no,Cash,7,active
-1769,Other,12,1.95,United Kingdom,47,Female,Missing,Email,Clothing,Kids,no,Cash,3,churned
-1770,Other,27,0.38,United Kingdom,73,Female,Missing,Organic,Clothing,Women,no,Cash,6,active
-1771,Other,27,0.38,United Kingdom,18,Female,Missing,Organic,Clothing,Men,no,PayPal,3,churned
-1772,85014A,6,5.95,United Kingdom,51,Male,Missing,Organic,Toys,Kids,no,PayPal,2,churned
-1773,85014B,6,5.95,United Kingdom,24,Female,Missing,Email,Electronics,Cables,no,Cash,8,churned
-1774,22121,3,5.95,United Kingdom,28,Female,Missing,Referral,Kitchen,Storage,yes,Bank Transfer,5,active
-1775,22577,27,0.85,United Kingdom,73,Male,Missing,Ads,Toys,Outdoor,no,PayPal,7,active
-1776,22578,27,0.85,United Kingdom,28,Male,Missing,Ads,Electronics,Accessories,no,Credit Card,2,active
-1777,22600,27,0.85,United Kingdom,24,Female,Missing,Organic,Kitchen,Appliances,no,Credit Card,8,churned
-1778,22601,24,0.85,United Kingdom,72,Female,Missing,Email,Stationery,Art,no,Cash,2,churned
-1779,22602,27,0.85,United Kingdom,76,Male,Missing,Email,Kitchen,Utensils,no,Bank Transfer,9,active
-1780,22603,24,0.85,United Kingdom,47,Female,Missing,Organic,Kitchen,Appliances,no,Cash,3,churned
-1781,Other,4,7.5,United Kingdom,44,Female,Missing,Email,Electronics,Gadgets,no,Credit Card,7,churned
-1782,21333,12,2.95,United Kingdom,38,Female,Missing,Organic,Home Decor,Frames,no,Bank Transfer,6,churned
-1783,82482,12,2.55,United Kingdom,70,Female,Missing,Organic,Home Decor,Decor,no,Bank Transfer,4,active
-1784,82494L,24,2.55,United Kingdom,66,Female,Missing,Ads,Toys,Outdoor,no,PayPal,4,active
-1785,22644,24,1.45,United Kingdom,48,Female,Missing,Email,Home Decor,Lights,yes,PayPal,7,churned
-1786,22646,24,1.45,United Kingdom,72,Female,Missing,Email,Kitchen,Appliances,yes,Credit Card,4,churned
-1787,22650,12,1.45,United Kingdom,48,Male,Missing,Organic,Electronics,Gadgets,no,Cash,4,churned
-1788,71053,4,3.75,United Kingdom,56,Female,Missing,Ads,Home Decor,Lights,no,Bank Transfer,8,churned
-1789,Other,27,1.25,United Kingdom,79,Male,Missing,Ads,Clothing,Women,no,PayPal,6,churned
-1790,21777,2,7.5,United Kingdom,77,Male,Missing,Organic,Electronics,Cables,no,Cash,7,churned
-1791,22667,6,2.95,United Kingdom,26,Female,Missing,Email,Kitchen,Appliances,no,Credit Card,6,churned
-1792,Other,6,2.1,United Kingdom,52,Female,Missing,Email,Stationery,Pens,no,PayPal,5,active
-1793,Other,12,1.25,United Kingdom,34,Female,Missing,Referral,Clothing,Women,no,Credit Card,1,churned
-1794,22381,5,2.1,United Kingdom,41,Male,Missing,Organic,Electronics,Cables,no,PayPal,3,churned
-1795,21232,12,1.25,United Kingdom,72,Female,Missing,Organic,Home Decor,Lights,no,Cash,8,churned
-1796,Other,12,0.85,United Kingdom,46,Female,Missing,Email,Home Decor,Lights,no,Cash,4,churned
-1797,22758,12,1.25,United Kingdom,37,Male,Missing,Referral,Stationery,Books,no,Credit Card,5,churned
-1798,Other,3,4.95,United Kingdom,43,Male,Missing,Referral,Home Decor,Frames,no,Bank Transfer,7,churned
-1799,22666,3,2.95,United Kingdom,28,Male,Missing,Ads,Electronics,Cables,no,Bank Transfer,4,active
-1800,22890,1,7.5,United Kingdom,28,Female,Missing,Ads,Stationery,Books,no,Bank Transfer,3,active
-1801,22797,1,7.5,United Kingdom,24,Male,Missing,Ads,Kitchen,Utensils,no,Credit Card,3,churned
-1802,22617,2,4.95,United Kingdom,39,Male,Missing,Referral,Clothing,Women,no,Credit Card,8,churned
-1803,22197,1,0.85,United Kingdom,31,Female,Missing,Email,Toys,Puzzles,yes,Cash,1,churned
-1804,71477,1,3.25,United Kingdom,22,Female,Missing,Email,Electronics,Gadgets,no,Cash,1,churned
-1805,22138,2,4.95,United Kingdom,62,Female,Missing,Referral,Stationery,Books,no,Credit Card,2,churned
-1806,22646,1,1.45,United Kingdom,70,Female,Missing,Email,Stationery,Books,no,PayPal,8,active
-1807,48188,10,6.75,United Kingdom,49,Female,Missing,Organic,Electronics,Gadgets,no,Cash,1,active
-1808,22692,10,6.75,United Kingdom,47,Male,Missing,Email,Clothing,Kids,yes,PayPal,5,active
-1809,21704,1,0.85,United Kingdom,72,Male,Missing,Organic,Electronics,Accessories,no,Bank Transfer,4,churned
+1742,48184,5,7.5,United Kingdom,74,Male,VIP,Email,Stationery,Art,no,Credit Card,2,churned
+1743,21658,6,3.95,United Kingdom,55,Male,VIP,Ads,Stationery,Books,no,PayPal,7,active
+1744,48187,10,6.75,United Kingdom,29,Male,VIP,Organic,Clothing,Men,yes,Cash,8,churned
+1745,84029G,24,3.39,United Kingdom,39,Female,VIP,Organic,Home Decor,Lights,no,Credit Card,5,churned
+1746,22110,27,2.1,United Kingdom,45,Female,VIP,Organic,Electronics,Accessories,no,Cash,1,churned
+1747,22111,24,4.25,United Kingdom,66,Male,VIP,Referral,Electronics,Cables,no,Credit Card,5,active
+1748,71477,24,2.75,United Kingdom,47,Female,VIP,Organic,Stationery,Books,no,PayPal,6,churned
+1749,22633,27,1.85,United Kingdom,42,Male,VIP,Referral,Toys,Outdoor,no,Credit Card,3,active
+1750,22865,27,1.85,United Kingdom,60,Female,VIP,Referral,Kitchen,Appliances,no,Bank Transfer,5,churned
+1751,22867,27,1.85,United Kingdom,28,Female,VIP,Ads,Electronics,Cables,no,Cash,7,churned
+1752,84836,27,1.06,United Kingdom,65,Male,VIP,Email,Stationery,Pens,no,Credit Card,5,churned
+1753,Other,24,3.39,United Kingdom,79,Female,VIP,Ads,Stationery,Books,no,PayPal,7,churned
+1754,21137,27,3.39,United Kingdom,32,Female,VIP,Email,Kitchen,Appliances,no,Bank Transfer,8,churned
+1755,Other,24,0.42,United Kingdom,69,Male,VIP,Referral,Kitchen,Utensils,no,Bank Transfer,5,churned
+1756,Other,24,0.65,United Kingdom,68,Female,VIP,Organic,Electronics,Accessories,no,Cash,4,churned
+1757,Other,24,0.85,United Kingdom,27,Male,VIP,Email,Stationery,Books,no,Credit Card,8,churned
+1758,Other,24,1.25,United Kingdom,68,Female,VIP,Email,Clothing,Women,no,Credit Card,7,churned
+1759,21846,24,1.25,United Kingdom,19,Male,VIP,Referral,Kitchen,Storage,no,Cash,8,active
+1760,21849,24,1.25,United Kingdom,31,Female,VIP,Organic,Home Decor,Frames,no,Bank Transfer,8,churned
+1761,Other,24,1.25,United Kingdom,45,Female,VIP,Ads,Electronics,Gadgets,no,Credit Card,5,churned
+1762,Other,24,1.25,United Kingdom,51,Female,VIP,Referral,Stationery,Art,no,Cash,8,churned
+1763,Other,24,1.25,United Kingdom,37,Male,VIP,Ads,Toys,Kids,no,Bank Transfer,4,churned
+1764,Other,24,1.25,United Kingdom,66,Male,VIP,Email,Toys,Kids,no,PayPal,6,active
+1765,21993,24,1.25,United Kingdom,24,Female,VIP,Ads,Electronics,Gadgets,no,PayPal,9,active
+1766,21991,24,1.25,United Kingdom,67,Male,VIP,Ads,Clothing,Kids,no,Credit Card,4,churned
+1767,85132A,12,1.95,United Kingdom,55,Female,VIP,Email,Toys,Outdoor,no,Bank Transfer,3,churned
+1768,85132B,12,1.95,United Kingdom,20,Female,VIP,Referral,Kitchen,Utensils,no,Cash,7,active
+1769,Other,12,1.95,United Kingdom,47,Female,VIP,Email,Clothing,Kids,no,Cash,3,churned
+1770,Other,27,0.38,United Kingdom,73,Female,VIP,Organic,Clothing,Women,no,Cash,6,active
+1771,Other,27,0.38,United Kingdom,18,Female,VIP,Organic,Clothing,Men,no,PayPal,3,churned
+1772,85014A,6,5.95,United Kingdom,51,Male,VIP,Organic,Toys,Kids,no,PayPal,2,churned
+1773,85014B,6,5.95,United Kingdom,24,Female,VIP,Email,Electronics,Cables,no,Cash,8,churned
+1774,22121,3,5.95,United Kingdom,28,Female,VIP,Referral,Kitchen,Storage,yes,Bank Transfer,5,active
+1775,22577,27,0.85,United Kingdom,73,Male,VIP,Ads,Toys,Outdoor,no,PayPal,7,active
+1776,22578,27,0.85,United Kingdom,28,Male,VIP,Ads,Electronics,Accessories,no,Credit Card,2,active
+1777,22600,27,0.85,United Kingdom,24,Female,VIP,Organic,Kitchen,Appliances,no,Credit Card,8,churned
+1778,22601,24,0.85,United Kingdom,72,Female,VIP,Email,Stationery,Art,no,Cash,2,churned
+1779,22602,27,0.85,United Kingdom,76,Male,VIP,Email,Kitchen,Utensils,no,Bank Transfer,9,active
+1780,22603,24,0.85,United Kingdom,47,Female,VIP,Organic,Kitchen,Appliances,no,Cash,3,churned
+1781,Other,4,7.5,United Kingdom,44,Female,VIP,Email,Electronics,Gadgets,no,Credit Card,7,churned
+1782,21333,12,2.95,United Kingdom,38,Female,VIP,Organic,Home Decor,Frames,no,Bank Transfer,6,churned
+1783,82482,12,2.55,United Kingdom,70,Female,VIP,Organic,Home Decor,Decor,no,Bank Transfer,4,active
+1784,82494L,24,2.55,United Kingdom,66,Female,VIP,Ads,Toys,Outdoor,no,PayPal,4,active
+1785,22644,24,1.45,United Kingdom,48,Female,VIP,Email,Home Decor,Lights,yes,PayPal,7,churned
+1786,22646,24,1.45,United Kingdom,72,Female,VIP,Email,Kitchen,Appliances,yes,Credit Card,4,churned
+1787,22650,12,1.45,United Kingdom,48,Male,VIP,Organic,Electronics,Gadgets,no,Cash,4,churned
+1788,71053,4,3.75,United Kingdom,56,Female,VIP,Ads,Home Decor,Lights,no,Bank Transfer,8,churned
+1789,Other,27,1.25,United Kingdom,79,Male,VIP,Ads,Clothing,Women,no,PayPal,6,churned
+1790,21777,2,7.5,United Kingdom,77,Male,VIP,Organic,Electronics,Cables,no,Cash,7,churned
+1791,22667,6,2.95,United Kingdom,26,Female,VIP,Email,Kitchen,Appliances,no,Credit Card,6,churned
+1792,Other,6,2.1,United Kingdom,52,Female,VIP,Email,Stationery,Pens,no,PayPal,5,active
+1793,Other,12,1.25,United Kingdom,34,Female,VIP,Referral,Clothing,Women,no,Credit Card,1,churned
+1794,22381,5,2.1,United Kingdom,41,Male,VIP,Organic,Electronics,Cables,no,PayPal,3,churned
+1795,21232,12,1.25,United Kingdom,72,Female,VIP,Organic,Home Decor,Lights,no,Cash,8,churned
+1796,Other,12,0.85,United Kingdom,46,Female,VIP,Email,Home Decor,Lights,no,Cash,4,churned
+1797,22758,12,1.25,United Kingdom,37,Male,VIP,Referral,Stationery,Books,no,Credit Card,5,churned
+1798,Other,3,4.95,United Kingdom,43,Male,VIP,Referral,Home Decor,Frames,no,Bank Transfer,7,churned
+1799,22666,3,2.95,United Kingdom,28,Male,VIP,Ads,Electronics,Cables,no,Bank Transfer,4,active
+1800,22890,1,7.5,United Kingdom,28,Female,VIP,Ads,Stationery,Books,no,Bank Transfer,3,active
+1801,22797,1,7.5,United Kingdom,24,Male,VIP,Ads,Kitchen,Utensils,no,Credit Card,3,churned
+1802,22617,2,4.95,United Kingdom,39,Male,VIP,Referral,Clothing,Women,no,Credit Card,8,churned
+1803,22197,1,0.85,United Kingdom,31,Female,VIP,Email,Toys,Puzzles,yes,Cash,1,churned
+1804,71477,1,3.25,United Kingdom,22,Female,VIP,Email,Electronics,Gadgets,no,Cash,1,churned
+1805,22138,2,4.95,United Kingdom,62,Female,VIP,Referral,Stationery,Books,no,Credit Card,2,churned
+1806,22646,1,1.45,United Kingdom,70,Female,VIP,Email,Stationery,Books,no,PayPal,8,active
+1807,48188,10,6.75,United Kingdom,49,Female,VIP,Organic,Electronics,Gadgets,no,Cash,1,active
+1808,22692,10,6.75,United Kingdom,47,Male,VIP,Email,Clothing,Kids,yes,PayPal,5,active
+1809,21704,1,0.85,United Kingdom,72,Male,VIP,Organic,Electronics,Accessories,no,Bank Transfer,4,churned
 1810,Other,1,4.25,United Kingdom,69,Male,Regular,Ads,Kitchen,Storage,no,PayPal,6,active
 1811,48116,10,6.75,United Kingdom,77,Female,VIP,Organic,Kitchen,Appliances,yes,Bank Transfer,9,active
 1812,22690,10,6.75,United Kingdom,37,Female,New,Ads,Home Decor,Lights,no,Bank Transfer,7,churned
@@ -2998,11 +2998,6 @@ customer_id,stock_code,quantity,price,country,customer_age,gender,customer_segme
 2997,84030E,1,4.25,United Kingdom,24,Male,New,Email,Kitchen,Utensils,no,Bank Transfer,2,churned
 2998,Other,1,3.75,United Kingdom,19,Male,New,Organic,Home Decor,Lights,no,PayPal,9,churned
 2999,Other,1,2.95,United Kingdom,65,Male,Regular,Email,Kitchen,Storage,no,Credit Card,2,active
-3000,22072,1,3.75,United Kingdom,61,Male,VIP,Referral,Clothing,Women,no,PayPal,6,active
-3000,22072,1,3.75,United Kingdom,61,Male,VIP,Referral,Clothing,Women,no,PayPal,6,active
-3000,22072,1,3.75,United Kingdom,61,Male,VIP,Referral,Clothing,Women,no,PayPal,6,active
-3000,22072,1,3.75,United Kingdom,61,Male,VIP,Referral,Clothing,Women,no,PayPal,6,active
-3000,22072,1,3.75,United Kingdom,61,Male,VIP,Referral,Clothing,Women,no,PayPal,6,active
 3000,22072,1,3.75,United Kingdom,61,Male,VIP,Referral,Clothing,Women,no,PayPal,6,active
 3001,22070,1,3.75,United Kingdom,48,Female,New,Organic,Toys,Puzzles,no,PayPal,2,churned
 3002,Other,1,2.55,United Kingdom,29,Female,VIP,Organic,Clothing,Men,yes,Credit Card,9,active
