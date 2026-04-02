@@ -7,7 +7,7 @@ Relevant steps used to construct the model:
 3. Fit an unconstrained baseline tree to check how much a fully grown tree overfits.
 4. Tune the decision tree hyperparameters with 5-fold cross-validation.
 5. Limit model complexity using max_depth, min_samples_split, min_samples_leaf, and ccp_alpha pruning.
-6. Choose a balanced model from the near-best CV candidates by checking the train-validation gap.
+6. Choose a balanced model from the near-best CV candidates while preferring enough depth to interpret the tree.
 7. Interpret the final trained model using the plotted tree and feature importances.
 
 Efforts used to prevent overfitting and underfitting:
@@ -17,67 +17,69 @@ Efforts used to prevent overfitting and underfitting:
 - Tuned min_samples_split and min_samples_leaf to avoid very small unstable splits.
 - Tuned ccp_alpha to apply post-pruning and remove weak branches.
 - Used 5-fold cross-validation and a complexity curve to balance bias and variance.
-- Selected the final model from the near-best CV candidates using the smallest generalization gap.
+- Selected the final model from the near-best CV candidates using a balance of validation score, depth, and generalization gap.
 
 Dataset summary:
-- Total observations: 3405
+- Total observations: 3400
 - Total features: 533
-- Training set size: 2724
-- Test set size: 681
+- Training set size: 2720
+- Test set size: 680
 
 Best hyperparameters from cross-validation:
-- ccp_alpha: 0.001
-- criterion: gini
-- max_depth: 8
-- min_samples_leaf: 5
-- min_samples_split: 10
-- Best cross-validation F1-score: 0.6466
+- ccp_alpha: 0.002
+- criterion: entropy
+- max_depth: 4
+- min_samples_leaf: 10
+- min_samples_split: 2
+- Best cross-validation F1-score: 0.6337
 
 Final selected balanced-model hyperparameters:
 - criterion: gini
 - max_depth: 4
-- min_samples_leaf: 5
-- min_samples_split: 20
-- ccp_alpha: 0.0005
-- CV mean training F1: 0.6627
-- CV mean validation F1: 0.6395
-- CV train-validation gap: 0.0232
+- min_samples_leaf: 2
+- min_samples_split: 2
+- ccp_alpha: 0.0
+- CV mean training F1: 0.6089
+- CV mean validation F1: 0.5632
+- CV train-validation gap: 0.0457
+- Actual fitted depth: 4
+- Actual leaf count: 16
 
 Baseline vs tuned model comparison:
-- baseline_unconstrained_tree: depth=37, leaves=855, train_f1=1.0000, test_f1=0.6362, f1_gap=0.3638
-- tuned_regularized_tree: depth=4, leaves=15, train_f1=0.6178, test_f1=0.5897, f1_gap=0.0280
+- baseline_unconstrained_tree: depth=32, leaves=850, train_f1=1.0000, test_f1=0.6472, f1_gap=0.3528
+- tuned_regularized_tree: depth=4, leaves=16, train_f1=0.7561, test_f1=0.7291, f1_gap=0.0270
 
-Interpretation: the tuned tree reduced the train-test F1 gap, from 0.3638 to 0.0280, which is evidence of reduced overfitting.
+Interpretation: the tuned tree reduced the train-test F1 gap, from 0.3528 to 0.0270, which is evidence of reduced overfitting.
 
 Final tuned model performance:
-- Training accuracy: 0.5543
-- Training precision: 0.6817
-- Training recall: 0.5648
-- Training F1-score: 0.6178
-- Test accuracy: 0.5198
-- Test precision: 0.6474
-- Test recall: 0.5415
-- Test F1-score: 0.5897
-- Train-test F1 gap: 0.0280
+- Training accuracy: 0.6379
+- Training precision: 0.6633
+- Training recall: 0.8791
+- Training F1-score: 0.7561
+- Test accuracy: 0.6000
+- Test precision: 0.6421
+- Test recall: 0.8433
+- Test F1-score: 0.7291
+- Train-test F1 gap: 0.0270
 
 Classification report:
               precision    recall  f1-score   support
 
-      active       0.37      0.48      0.42       247
-     churned       0.65      0.54      0.59       434
+      active       0.38      0.17      0.24       246
+     churned       0.64      0.84      0.73       434
 
-    accuracy                           0.52       681
-   macro avg       0.51      0.51      0.51       681
-weighted avg       0.55      0.52      0.53       681
+    accuracy                           0.60       680
+   macro avg       0.51      0.51      0.48       680
+weighted avg       0.55      0.60      0.55       680
 
 Top 10 most important features:
-- delivery_time_days: 0.2413
-- quantity: 0.1157
-- customer_age: 0.0929
-- marketing_channel_Email: 0.0846
-- stock_code_21591: 0.0742
-- subcategory_Outdoor: 0.0726
-- category_Stationery: 0.0718
-- customer_segment_Regular: 0.0716
-- category_Home Decor: 0.0620
-- payment_method_Cash: 0.0590
+- delivery_time_days: 0.1631
+- customer_age: 0.1393
+- price: 0.0973
+- marketing_channel_Email: 0.0947
+- category_Electronics: 0.0888
+- category_Stationery: 0.0857
+- stock_code_21591: 0.0853
+- category_Home Decor: 0.0834
+- stock_code_22694: 0.0721
+- quantity: 0.0605

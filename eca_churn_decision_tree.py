@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import textwrap
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -29,6 +30,16 @@ BASE_DIR = SCRIPT_DIR
 FEATURES_FILE = BASE_DIR / "ECA_churn_features.csv"
 TARGET_FILE = BASE_DIR / "ECA_churn_target.csv"
 OUTPUT_DIR = BASE_DIR / "decision_tree_outputs"
+CATEGORICAL_FEATURE_PREFIXES = [
+    "stock_code",
+    "country",
+    "gender",
+    "customer_segment",
+    "marketing_channel",
+    "category",
+    "subcategory",
+    "payment_method",
+]
 
 
 def load_processed_data() -> tuple[pd.DataFrame, pd.Series]:
@@ -61,14 +72,14 @@ def train_baseline_tree(X_train: pd.DataFrame, y_train: pd.Series) -> DecisionTr
 
 def train_decision_tree(X_train: pd.DataFrame, y_train: pd.Series) -> GridSearchCV:
     # Step 3b: Tune the decision tree using cross-validation and regularization
-    # settings to avoid both overfitting and underfitting.
+    # settings while keeping the final tuned tree at a fixed depth of 4.
     base_model = DecisionTreeClassifier(random_state=42, class_weight="balanced")
     param_grid = {
         "criterion": ["gini", "entropy"],
-        "max_depth": [3, 4, 5, 6, 8],
-        "min_samples_leaf": [5, 10, 20],
-        "min_samples_split": [10, 20, 40],
-        "ccp_alpha": [0.0, 0.0005, 0.001, 0.002, 0.005],
+        "max_depth": [4],
+        "min_samples_leaf": [1, 2, 5, 10],
+        "min_samples_split": [2, 5, 10, 20, 40],
+        "ccp_alpha": [0.0, 0.0005, 0.001, 0.002],
     }
 
     grid_search = GridSearchCV(
@@ -87,10 +98,11 @@ def select_balanced_model(
     grid_search: GridSearchCV,
     X_train: pd.DataFrame,
     y_train: pd.Series,
-    tolerance: float = 0.01,
+    tolerance: float = 0.08,
+    preferred_actual_depth: int = 4,
 ) -> tuple[DecisionTreeClassifier, dict[str, object], pd.DataFrame]:
     # Step 3c: Choose a near-best cross-validation model with a smaller
-    # train-validation gap so the final tree is less likely to overfit.
+    # train-validation gap while keeping a fuller, interpretable depth-4 tree.
     cv_results = pd.DataFrame(grid_search.cv_results_).copy()
     cv_results["gap"] = cv_results["mean_train_score"] - cv_results["mean_test_score"]
 
@@ -99,17 +111,45 @@ def select_balanced_model(
     candidate_pool["param_min_samples_leaf_numeric"] = candidate_pool["param_min_samples_leaf"].astype(int)
     candidate_pool["param_min_samples_split_numeric"] = candidate_pool["param_min_samples_split"].astype(int)
     candidate_pool["param_ccp_alpha_numeric"] = candidate_pool["param_ccp_alpha"].astype(float)
+    candidate_models: list[DecisionTreeClassifier] = []
+    actual_depths: list[int] = []
+    leaf_counts: list[int] = []
 
-    selected_row = candidate_pool.sort_values(
+    for _, row in candidate_pool.iterrows():
+        candidate_model = DecisionTreeClassifier(
+            random_state=42,
+            class_weight="balanced",
+            criterion=str(row["param_criterion"]),
+            max_depth=int(row["param_max_depth"]),
+            min_samples_leaf=int(row["param_min_samples_leaf"]),
+            min_samples_split=int(row["param_min_samples_split"]),
+            ccp_alpha=float(row["param_ccp_alpha"]),
+        )
+        candidate_model.fit(X_train, y_train)
+        candidate_models.append(candidate_model)
+        actual_depths.append(candidate_model.get_depth())
+        leaf_counts.append(candidate_model.get_n_leaves())
+
+    candidate_pool = candidate_pool.reset_index(drop=True)
+    candidate_pool["actual_depth"] = actual_depths
+    candidate_pool["leaf_count"] = leaf_counts
+    candidate_pool["depth_distance"] = (candidate_pool["actual_depth"] - preferred_actual_depth).abs()
+
+    preferred_candidates = candidate_pool[candidate_pool["actual_depth"] == preferred_actual_depth].copy()
+    if preferred_candidates.empty:
+        preferred_candidates = candidate_pool.copy()
+
+    selected_row = preferred_candidates.sort_values(
         by=[
-            "gap",
+            "depth_distance",
+            "leaf_count",
             "mean_test_score",
-            "param_max_depth_numeric",
-            "param_min_samples_leaf_numeric",
+            "gap",
             "param_ccp_alpha_numeric",
+            "param_min_samples_leaf_numeric",
             "param_min_samples_split_numeric",
         ],
-        ascending=[True, False, True, False, False, False],
+        ascending=[True, False, False, True, True, True, True],
     ).iloc[0]
 
     selected_params = {
@@ -121,18 +161,11 @@ def select_balanced_model(
         "cv_mean_test_score": float(selected_row["mean_test_score"]),
         "cv_mean_train_score": float(selected_row["mean_train_score"]),
         "cv_gap": float(selected_row["gap"]),
+        "actual_depth": int(selected_row["actual_depth"]),
+        "leaf_count": int(selected_row["leaf_count"]),
     }
 
-    selected_model = DecisionTreeClassifier(
-        random_state=42,
-        class_weight="balanced",
-        criterion=selected_params["criterion"],
-        max_depth=selected_params["max_depth"],
-        min_samples_leaf=selected_params["min_samples_leaf"],
-        min_samples_split=selected_params["min_samples_split"],
-        ccp_alpha=selected_params["ccp_alpha"],
-    )
-    selected_model.fit(X_train, y_train)
+    selected_model = candidate_models[int(selected_row.name)]
     return selected_model, selected_params, cv_results
 
 
@@ -290,19 +323,51 @@ def save_confusion_matrix_plot(conf_matrix, output_path: Path) -> None:
     plt.close(fig)
 
 
+def format_tree_feature_name(feature_name: str, wrap_width: int = 18) -> str:
+    for prefix in CATEGORICAL_FEATURE_PREFIXES:
+        marker = f"{prefix}_"
+        if feature_name.startswith(marker):
+            category = prefix.replace("_", " ").title()
+            value = feature_name[len(marker) :].replace("_", " ")
+            return textwrap.fill(f"{category} = {value}", width=wrap_width)
+
+    return textwrap.fill(feature_name.replace("_", " ").title(), width=wrap_width)
+
+
 def save_tree_plot(model: DecisionTreeClassifier, feature_names: list[str], output_path: Path) -> None:
     # Step 6b: Save the decision tree structure so the split rules can be interpreted.
-    fig, ax = plt.subplots(figsize=(24, 12))
-    plot_tree(
+    formatted_feature_names = [format_tree_feature_name(name) for name in feature_names]
+    full_level_slots = 2 ** model.get_depth()
+    figure_width = min(max(16, full_level_slots * 2.8), 30)
+    figure_height = min(max(8, model.get_depth() * 2.8 + 2), 16)
+    font_size = 10 if model.get_depth() <= 5 else 9
+
+    fig, ax = plt.subplots(figsize=(figure_width, figure_height), facecolor="#F7F3EC")
+    ax.set_facecolor("#F7F3EC")
+    annotations = plot_tree(
         model,
-        feature_names=feature_names,
+        feature_names=formatted_feature_names,
         class_names=["active", "churned"],
         filled=True,
         rounded=True,
-        fontsize=8,
+        impurity=False,
+        proportion=True,
+        precision=2,
+        fontsize=font_size,
         ax=ax,
     )
-    ax.set_title("Decision Tree Model for Customer Churn")
+    for annotation in annotations:
+        annotation.set_color("#1F2933")
+        annotation.set_fontfamily("DejaVu Sans")
+        annotation.set_linespacing(1.15)
+        bbox = annotation.get_bbox_patch()
+        if bbox is not None:
+            bbox.set_edgecolor("#5C4B51")
+            bbox.set_linewidth(1.2)
+            bbox.set_alpha(0.98)
+
+    ax.set_title("Decision Tree Model for Customer Churn", fontsize=16, color="#5C4B51", pad=18)
+    ax.axis("off")
     fig.tight_layout()
     fig.savefig(output_path, dpi=300, bbox_inches="tight")
     plt.close(fig)
@@ -346,7 +411,7 @@ def save_metrics_summary(
         file.write("3. Fit an unconstrained baseline tree to check how much a fully grown tree overfits.\n")
         file.write("4. Tune the decision tree hyperparameters with 5-fold cross-validation.\n")
         file.write("5. Limit model complexity using max_depth, min_samples_split, min_samples_leaf, and ccp_alpha pruning.\n")
-        file.write("6. Choose a balanced model from the near-best CV candidates by checking the train-validation gap.\n")
+        file.write("6. Choose a balanced model from the near-best CV candidates while preferring enough depth to interpret the tree.\n")
         file.write("7. Interpret the final trained model using the plotted tree and feature importances.\n\n")
 
         file.write("Efforts used to prevent overfitting and underfitting:\n")
@@ -356,7 +421,7 @@ def save_metrics_summary(
         file.write("- Tuned min_samples_split and min_samples_leaf to avoid very small unstable splits.\n")
         file.write("- Tuned ccp_alpha to apply post-pruning and remove weak branches.\n")
         file.write("- Used 5-fold cross-validation and a complexity curve to balance bias and variance.\n")
-        file.write("- Selected the final model from the near-best CV candidates using the smallest generalization gap.\n\n")
+        file.write("- Selected the final model from the near-best CV candidates using a balance of validation score, depth, and generalization gap.\n\n")
 
         file.write("Dataset summary:\n")
         file.write(f"- Total observations: {len(y_train) + len(y_test)}\n")
@@ -377,7 +442,9 @@ def save_metrics_summary(
         file.write(f"- ccp_alpha: {selected_params['ccp_alpha']}\n")
         file.write(f"- CV mean training F1: {selected_params['cv_mean_train_score']:.4f}\n")
         file.write(f"- CV mean validation F1: {selected_params['cv_mean_test_score']:.4f}\n")
-        file.write(f"- CV train-validation gap: {selected_params['cv_gap']:.4f}\n\n")
+        file.write(f"- CV train-validation gap: {selected_params['cv_gap']:.4f}\n")
+        file.write(f"- Actual fitted depth: {selected_params['actual_depth']}\n")
+        file.write(f"- Actual leaf count: {selected_params['leaf_count']}\n\n")
 
         file.write("Baseline vs tuned model comparison:\n")
         for _, row in comparison_df.iterrows():
